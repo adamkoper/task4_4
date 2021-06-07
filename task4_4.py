@@ -1,10 +1,6 @@
 import sys
 import logging
 
-operation = input("Podaj działanie, posługując się odpowiednią liczbą: 1 Dodawanie, 2 Odejmowanie, 3 Mnożenie, 4 Dzielenie: ")
-num1 = input("Podaj składnik 1. ")
-num2 = input("Podaj składnik 2. ")
-
 def calculator(operation):
     if operation == 1:
         return logging.info("Dodaję ", num1, "i ", num2)
@@ -25,8 +21,11 @@ def calculator(operation):
     else:
         return "podana wartość nie jest liczbą od 1 do 4 "
 
-
-print(calculator(operation))
+if __name__ == "__main__":
+    operation = input("Podaj działanie, posługując się odpowiednią liczbą: 1 Dodawanie, 2 Odejmowanie, 3 Mnożenie, 4 Dzielenie: ")
+    num1 = input("Podaj składnik 1. ")
+    num2 = input("Podaj składnik 2. ")
+    print(calculator(operation))
 
 
 
